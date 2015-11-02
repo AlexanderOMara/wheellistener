@@ -1,0 +1,46 @@
+{
+  "name": "wheellistener",
+  "version": "1.0.0",
+  "description": "Cross-browser wheel event listener.",
+  "main": "src/wheellistener.js",
+  "keywords": [
+    "wheellistener",
+    "wheel",
+    "event",
+    "eventlistener",
+    "library",
+    "polyfill",
+    "shim"
+  ],
+  "author": "Alexander O'Mara",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexanderOMara/wheellistener.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexanderOMara/wheellistener/issues"
+  },
+  "scripts": {
+    "make": "npm run clean && npm run check && npm run build",
+    "clean": "rimraf ./dist/*.js",
+    "check": "jshint --verbose ./src/wheellistener.js ; exit 0",
+    "build": "uglifyjs -c -m --comments -o ./dist/wheellistener.min.js ./src/wheellistener.js",
+    "test": "browserify ./test/index.js | testling -u | tap-spec ; exit 0"
+  },
+  "files": [
+    "src",
+    "dist",
+    "LICENSE.txt",
+    "README.md"
+  ],
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "jshint": "^2.8.0",
+    "rimraf": "^2.4.3",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2",
+    "testling": "^1.7.1",
+    "uglify-js": "^2.5.0"
+  }
+}

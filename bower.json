@@ -1,0 +1,30 @@
+{
+  "name": "wheellistener",
+  "version": "1.0.0",
+  "description": "Cross-browser wheel event listener.",
+  "main": "src/wheellistener.js",
+  "keywords": [
+    "wheellistener",
+    "wheel",
+    "event",
+    "eventlistener",
+    "library",
+    "polyfill",
+    "shim"
+  ],
+  "authors": [
+    "Alexander O'Mara"
+  ],
+  "license": "MPL-2.0",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "homepage": "https://github.com/AlexanderOMara/wheellistener/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test"
+  ]
+}
