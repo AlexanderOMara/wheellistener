@@ -23,9 +23,9 @@
   },
   "scripts": {
     "make": "npm run clean && npm run check && npm run build",
-    "clean": "rimraf ./dist/*.js",
+    "clean": "rimraf ./dist",
     "check": "jshint --verbose ./src/wheellistener.js ; exit 0",
-    "build": "uglifyjs -c -m --comments -o ./dist/wheellistener.min.js ./src/wheellistener.js",
+    "build": "mkdirp ./dist ; uglifyjs -c -m --comments -o ./dist/wheellistener.min.js ./src/wheellistener.js",
     "test": "browserify ./test/index.js | testling -u | tap-spec ; exit 0"
   },
   "files": [
@@ -37,6 +37,7 @@
   "devDependencies": {
     "browserify": "^11.2.0",
     "jshint": "^2.8.0",
+    "mkdirp": "^0.5.1",
     "rimraf": "^2.4.3",
     "tap-spec": "^4.1.0",
     "tape": "^4.2.2",
