@@ -1,6 +1,6 @@
 /*!
  * wheellistener
- * @version 1.1.0
+ * @version 1.0.0
  * @author Alexander O'Mara
  * @copyright Copyright (c) 2015 Alexander O'Mara
  * @license MPL 2.0 <http://mozilla.org/MPL/2.0/>
@@ -177,7 +177,7 @@
 		var target = e.target;
 		if (target && target.nodeType === 3) {
 			while ((target = target.parentNode || target.parentElement)) {
-				if (target !== 3) {
+				if (target.nodeType !== 3) {
 					// The event dispatcher mush also fix the eventPhase.
 					this.target = target;
 					break;
