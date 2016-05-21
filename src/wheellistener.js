@@ -1,6 +1,6 @@
 /*!
  * wheellistener
- * @version 1.0.0
+ * @version 1.0.1
  * @author Alexander O'Mara
  * @copyright Copyright (c) 2015 Alexander O'Mara
  * @license MPL 2.0 <http://mozilla.org/MPL/2.0/>

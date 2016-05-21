@@ -1,6 +1,6 @@
 {
   "name": "wheellistener",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cross-browser wheel event listener.",
   "main": "src/wheellistener.js",
   "keywords": [
